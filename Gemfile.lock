@@ -41,14 +41,18 @@ GEM
     arel (8.0.0)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     bcrypt (3.1.11)
 =======
 =======
     bcrypt (3.1.11)
 
 >>>>>>> 0b8d512198ef58a4558bd07a76b53d3499f1513c
+=======
+>>>>>>> 7cf4e3c41db487c4de6175d9fc0b2bec9a5122ce
     autoprefixer-rails (8.1.0.1)
       execjs
+    bcrypt (3.1.11)
     bootstrap (4.0.0)
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
@@ -149,17 +153,22 @@ PLATFORMS
 DEPENDENCIES
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   bcrypt (~> 3.1.7)
 =======
   bootstrap (~> 4.0.0)
 >>>>>>> cb4fa4a696e34a4b43010ee58b9fe1db67a8323d
 =======
 
-  bcrypt (~> 3.1.7)
 =======
+>>>>>>> 7cf4e3c41db487c4de6175d9fc0b2bec9a5122ce
+  bcrypt (~> 3.1.7)
   bootstrap (~> 4.0.0)
+<<<<<<< HEAD
 
 >>>>>>> 0b8d512198ef58a4558bd07a76b53d3499f1513c
+=======
+>>>>>>> 7cf4e3c41db487c4de6175d9fc0b2bec9a5122ce
   byebug
   knock
   listen (>= 3.0.5, < 3.2)
