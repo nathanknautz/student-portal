@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   get '/skills/:id' => 'skills#show'
   post '/skills' => 'skills#create'
-  pacth '/skills/:id' => 'skills#update'
+  patch '/skills/:id' => 'skills#update'
   delete '/skills/:id' => 'skills#destroy'
 
   get '/capstones/:id' => 'capstones#show'
