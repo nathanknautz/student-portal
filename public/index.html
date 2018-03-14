@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <title>Resume App</title>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -11,9 +13,16 @@
 <body>
   <div id="vue-app">
 
+
+
     <router-view></router-view>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
@@ -21,28 +30,335 @@
 
 <template id="login">
   <div class="vue-component">
-    
+    <!-- login -->
+    <form class="text-center">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-
-
+    <!-- end login -->
   </div>
 </template>
 
 <template class="show-resume-page">
   <div class="vue-component">
     
+  <!-- student info  -->
+    <form>
+      <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="https://bloximages.newyork1.vip.townnews.com/pilotonline.com/content/tncms/assets/v3/editorial/5/0a/50a05634-6099-56d7-a849-89bd4b3ca830/5a25b8307be23.image.jpg" alt="Card image cap">
+        <div class="card-body">
+         <div class="form-row">
+           <div class="form-group col-md-6">
+             <label for="inputEmail4">First Name</label>
+             <input type="name" class="form-control" id="inputEmail4" placeholder="Janet">
+           </div>
+           <div class="form-group col-md-6">
+             <label for="inputPassword4">Last Name</label>
+             <input type="name" class="form-control" id="inputPassword4" placeholder="Jackson">
+           </div>
+         </div> 
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Phone Number</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="555-234-6789">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Bio</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Linkedin</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Twitter Handle</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Personal Blog or Website </label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Online Resume</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Github</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+    </form>
 
+  <!-- end student info -->
+
+  <!-- experience -->
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Start Date</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="01-01-2007">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">End Date</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="02-27-2011">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Job Title</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Web Developer">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Company Name</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Actualize">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Job Details</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+  <!-- end experience -->
+
+  <!-- education -->
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Start Date</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="01-01-2007">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">End Date</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="02-27-2011">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Degree</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Bachelors of Science">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">University Name</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Indiana University">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Details</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+  <!-- end education -->
+
+  <!-- skills -->
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Skills</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <!-- end skills -->
+
+  <!-- capstone -->
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Project Name</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Resume App">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Project URL</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="www.hello.com">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="card w-50">
+    <img class="card-img-top" src="https://assets.cakeresume.com/assets/static_pages/home/v2/resume_example-5f6331104450a7c7aac9c9f49d11f97c5943505d95c0c19c0ed07e852be2c95d.png" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Screenshot of my capstone project!</p>
+    </div>
+  </div>
+  <!-- end capstone -->
+  </div>
+</template>
+
+
+<template class="edit-student-page">
+  <div class="vue-component">
+    
+    <!-- student info  -->
+      <form>
+        <div class="card" style="width: 25rem;">
+          <img class="card-img-top" src="https://bloximages.newyork1.vip.townnews.com/pilotonline.com/content/tncms/assets/v3/editorial/5/0a/50a05634-6099-56d7-a849-89bd4b3ca830/5a25b8307be23.image.jpg" alt="Card image cap">
+          <div class="card-body">
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="inputEmail4">First Name</label>
+               <input type="name" class="form-control" id="inputEmail4" placeholder="Janet">
+             </div>
+             <div class="form-group col-md-6">
+               <label for="inputPassword4">Last Name</label>
+               <input type="name" class="form-control" id="inputPassword4" placeholder="Jackson">
+             </div>
+           </div> 
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Phone Number</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="555-234-6789">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Bio</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Linkedin</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Twitter Handle</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Personal Blog or Website </label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Online Resume</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Github</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+        </div>
+      </form>
+
+    <!-- end student info -->
 
 
   </div>
 </template>
 
 
-<template class="edit-resume-page">
+<template class="edit-experience-page">
   <div class="vue-component">
     
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Start Date</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="01-01-2007">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">End Date</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="02-27-2011">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Job Title</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Web Developer">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Company Name</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Actualize">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Job Details</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+  </div>
+</template>
+
+<template class="edit-education-page">
+  <div class="vue-component">
+    
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Start Date</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="01-01-2007">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">End Date</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="02-27-2011">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Degree</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Bachelors of Science">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">University Name</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Indiana University">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Details</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+  </div>
+</template>
+
+<template class="edit-skills-page">
+  <div class="vue-component">
+    
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Skills</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
 
 
+  </div>
+</template>
+
+<template class="edit-capstone-page">
+  <div class="vue-component">
+    
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Project Name</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Resume App">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Project URL</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="www.hello.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="card w-50">
+      <img class="card-img-top" src="https://assets.cakeresume.com/assets/static_pages/home/v2/resume_example-5f6331104450a7c7aac9c9f49d11f97c5943505d95c0c19c0ed07e852be2c95d.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Screenshot of my capstone project!</p>
+      </div>
+    </div>
 
   </div>
 </template>
