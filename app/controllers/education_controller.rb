@@ -1,4 +1,4 @@
-class EducationController < ApplicationController
+class EducationsController < ApplicationController
 
   def show
   education_id = params[:id] 

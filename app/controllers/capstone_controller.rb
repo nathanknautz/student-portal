@@ -1,4 +1,4 @@
-class CapstoneController < ApplicationController
+class CapstonesController < ApplicationController
 
   def show
     capstone_id = params[:id]
@@ -30,7 +30,7 @@ class CapstoneController < ApplicationController
     @capstone = params[:id]
     response = Unirest.delete("http://soc-resumes-api.herokuapp.com/#{capstone_id}", parameters: params).body
 
-    render json:{ message: "Successfully destroyed Capstone project" }
+    render json:{ message: "Successfully destroyed capstone project" }
 
   end
 end
